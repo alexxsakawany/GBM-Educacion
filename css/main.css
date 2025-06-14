@@ -1,0 +1,278 @@
+/* importações*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+      
+
+
+
+/* configuração global */
+
+* {
+
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  transition: 1s ease;
+  
+  letter-spacing: 1.5px;
+  font-family: 'Montserrat', monospace;
+
+ }
+
+ /* Variaveis */
+
+ :root {
+
+  /* paleta de cores*/
+
+  --violet-900: #4c1d95;
+  --violet-700: #6d28d9;
+  --violet-500: #8b5cf6;
+  --violet-300: #c4b5fd;
+  --violet-100: #ede9fe;
+  
+
+ }
+
+
+
+/* Corpo do site */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+
+/* Cabeçalho do site */
+header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  background-color: white;
+  
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+  position: sticky;
+  top: 0;
+}
+
+header img {
+  height: 50px;
+  padding: 5px;
+}
+
+/* Barra de navegação do site */
+/* TOPO */
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 50px;
+}
+
+.info-topo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  color: #000;
+  font-size: 14px;
+}
+
+.botao-localizacao {
+  border: 2px solid #6c21c7;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.botao-localizacao:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Barra menu */
+.barra-menu {
+  background-color: var(--violet-500);
+}
+
+.barra-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0;
+  gap: 30px;
+}
+
+.barra-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.barra-menu li a:hover {
+  color: #ccc;
+}
+
+
+
+/* Primeiro contéudo */
+
+section {
+
+  text-align: center;
+  padding: 60px 20px;
+}
+
+section h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+section button {
+
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+
+  box-shadow: rgb(0, 0, 0) 0px 7px 29px 0px;
+
+}
+
+section button > a {
+
+   
+     color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+
+section button:hover {
+
+  padding: 30px;
+  margin: 20px;
+}
+
+  
+    
+
+  
+
+
+/* segunda parte */
+
+.img-section {
+
+  
+  display: inline-flex;
+  background-color: var(--violet100);
+  border: 10px solid var(--violet-100);
+  border-radius: 1px;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+  
+
+}
+
+.img-section img {
+
+  width: 700px;
+  margin-right: 20px;
+
+}
+
+          /* Texto da segunda parte */
+
+.school-content {
+
+  padding: 60px;
+  font-size: 18px;
+  
+
+}
+.school-content h1 {
+
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.school-content h3 {
+
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.rodape {
+  background-color: var(--violet-700);
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.rodape .social a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.rodape .social img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); 
+  transition: 0.3s;
+}
+
+.rodape .social img:hover {
+  opacity: 0.7;
+}
+
+.rodape .links {
+  margin: 15px 0;
+}
+
+.rodape .links a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+
+.rodape .links a:hover {
+  color: white;
+}
+
+.rodape .copy {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #999;
+}
