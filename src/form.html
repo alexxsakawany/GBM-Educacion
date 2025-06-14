@@ -1,46 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt">
-<head>
-  <meta charset="UTF-8" />
-  <title>Matrícula IPOCET</title>
-    <link rel="stylesheet" href="style.css">
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
-</head>
-<body>
-  <h1>Formulário de Matrícula IPOCET</h1>
-  <form action="/submit" method="POST" enctype="multipart/form-data">
-    <label>Nome: <input type="text" name="nome" required></label><br>
-    <label>Data de Nascimento: <input type="date" name="nascimento" required></label><br>
-    <label>Naturalidade: <input type="text" name="naturalidade" required></label><br>
-    <label>Nacionalidade: <input type="text" name="nacionalidade" required></label><br>
-    <label>Nome do Encarregado: <input type="text" name="encarregado" required></label><br>
-    <label>Telefone: <input type="tel" name="telefone" required></label><br>
-    <label>Email: <input type="email" name="email" required></label><br>
-    
-    <label>Curso:
-      <select name="curso" required>
-        <option value="Informática">Informática</option>
-        <option value="Contabilidade">Contabilidade</option>
-        <option value="Direito">Direito</option>
-      </select>
-    </label><br>
+  <body>
+    <div class="container">
+      <div class="form-image">
+        <img src="/assets/img/form-image.svg" alt="image" />
+      </div>
 
-    <label>Classe: <input type="text" name="classe" required></label><br>
+      <div class="form">
 
-    <label>Tipo de Ensino:
-      <select name="ensino" required>
-        <option value="Presencial">Presencial</option>
-        <option value="Online">Online</option>
-        <option value="Domiciliar">Domiciliar</option>
-      </select>
-    </label><br>
+        <form action="#">
+          <div class="form-header">
+            <div class="title">
+              <h1>Cadastre-se</h1>
+            </div>
+            <div class="login-button">
+              <button><a href="#">Entrar</a></button>
+            </div>
+          </div>
 
-    <label>Foto do Aluno: <input type="file" name="foto" accept="image/*" required></label><br>
-    <label>Documento de Identificação: <input type="file" name="identificacao" accept=".pdf,.jpg,.png" required></label><br>
-    <label>Comprovativo de Pagamento: <input type="file" name="comprovativo" accept=".pdf,.jpg,.png" required></label><br>
+          <div class="input-group">
+            <div class="input-box">
+              <label for="firstname">Nome</label>
+              <input type="text" id="firstname" name="firstname" placeholder="Digite o seu nome" required>
+            </div>
 
-    <button type="submit">Enviar Matrícula</button>
-  </form>
-</body>
+            <div class="input-box">
+              <label for="lastname">Sobrenome</label>
+              <input type="text" id="lastname" name="lastname" placeholder="Digite o seu sobrenome" required>
+            </div>
+
+            <div class="input-box">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
+            </div>
+
+            <div class="input-box">
+              <label for="firstname">Nome</label>
+              <input type="text" id="firstname" name="firstname" placeholder="Digite o seu nome" required>
+            </div>
+          </div>
+
+        </form>
+
+
+      </div>
+    </div>
+  </body>
 </html>
-
