@@ -14,9 +14,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
   transition: 1s ease;
-  
   letter-spacing: 1.5px;
   font-family: 'Montserrat', monospace;
 
@@ -187,7 +185,7 @@ section button:hover {
 
 /* segunda parte */
 
-.img-section {
+.conteudo {
 
   
   display: inline-flex;
@@ -202,7 +200,7 @@ section button:hover {
 
 }
 
-.img-section img {
+.conteudo img {
 
   width: 700px;
   margin-right: 20px;
@@ -211,26 +209,36 @@ section button:hover {
 
           /* Texto da segunda parte */
 
-.school-content {
+.escrita {
 
   padding: 60px;
   font-size: 18px;
   
 
 }
-.school-content h1 {
+.escrita h2 {
 
     text-align: center;
     margin-bottom: 20px;
     
 }
 
-.school-content h3 {
+.escrita h3 {
 
     text-align: center;
     margin-bottom: 20px;
     
 }
+
+
+
+
+
+
+
+
+
+/* Rodapé*/
 .rodape {
   background-color: var(--violet-700);
   color: white;
