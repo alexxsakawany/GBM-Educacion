@@ -1,55 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matrícula - KS Academy</title>
+  <link rel="stylesheet" href="/css/form.css">
+</head>
+<body>
+  <header>
+    <img src="/assets/img/School Logo.png" alt="Logo KS Academy" class="logo" />
+    <h1>Formulário de Inscrição</h1>
+  </header>
 
-  <body>
-    <div class="container">
-      <div class="form-image">
-        <img src="/assets/img/form-image.svg" alt="image" />
+  <main>
+    <form action="submit" method="post" enctype="multipart/form-data">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nome">Nome completo:</label>
+          <input type="text" name="nome" id="nome" required />
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+        </div>
       </div>
 
-      <div class="form">
-
-        <form action="#">
-          <div class="form-header">
-            <div class="title">
-              <h1>Cadastre-se</h1>
-            </div>
-            <div class="login-button">
-              <button><a href="#">Entrar</a></button>
-            </div>
-          </div>
-
-          <div class="input-group">
-            <div class="input-box">
-              <label for="firstname">Nome</label>
-              <input type="text" id="firstname" name="firstname" placeholder="Digite o seu nome" required>
-            </div>
-
-            <div class="input-box">
-              <label for="lastname">Sobrenome</label>
-              <input type="text" id="lastname" name="lastname" placeholder="Digite o seu sobrenome" required>
-            </div>
-
-            <div class="input-box">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
-            </div>
-
-            <div class="input-box">
-              <label for="firstname">Nome</label>
-              <input type="text" id="firstname" name="firstname" placeholder="Digite o seu nome" required>
-            </div>
-          </div>
-
-        </form>
-
-
+      <div class="form-row">
+        <div class="form-group">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" name="telefone" id="telefone" required />
+        </div>
+        <div class="form-group">
+          <label for="disciplina">Disciplina:</label>
+          <select name="disciplina" id="disciplina" required>
+            <option value="Matemática">Matemática</option>
+            <option value="Português">Português</option>
+            <option value="Inglês">Inglês</option>
+            <option value="Física">Física</option>
+            <option value="Química">Química</option>
+          </select>
+        </div>
       </div>
-    </div>
-  </body>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="tipo">Tipo de Aulas:</label>
+          <select name="tipo" id="tipo" required>
+            <option value="Online">Online</option>
+            <option value="Domiciliar">Domiciliar</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comprovante">Comprovante de pagamento:</label>
+          <input type="file" id="comprovante" name="comprovante" accept=".jpg,.jpeg,.png,.pdf" required />
+        </div>
+      </div>
+
+      <button type="submit">Enviar Inscrição</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 KS Academy</p>
+  </footer>
+</body>
 </html>
+
