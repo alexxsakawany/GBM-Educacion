@@ -1,55 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
+<html lang="pt-br">
 
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/form.css">
+    <title>Ipocet Students | Cadastro</title>
+</head>
+
+<body>
     <div class="container">
-      <div class="form-image">
-        <img src="/assets/img/form-image.svg" alt="image" />
-      </div>
+        <div class="form-image">
+            <img src="/assets/img/form-image.svg" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
 
-      <div class="form">
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
 
-        <form action="#">
-          <div class="form-header">
-            <div class="title">
-              <h1>Cadastre-se</h1>
-            </div>
-            <div class="login-button">
-              <button><a href="#">Entrar</a></button>
-            </div>
-          </div>
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
 
-          <div class="input-group">
-            <div class="input-box">
-              <label for="firstname">Nome</label>
-              <input type="text" id="firstname" name="firstname" placeholder="Digite o seu nome" required>
-            </div>
+                    <div class="input-box">
+                        <label for="number">Telefone</label>
+                        <input id="number" type="tel" name="number" placeholder="xxx-xxx-xxx" required>
+                    </div>
 
-            <div class="input-box">
-              <label for="lastname">Sobrenome</label>
-              <input type="text" id="lastname" name="lastname" placeholder="Digite o seu sobrenome" required>
-            </div>
-
-            <div class="input-box">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
-            </div>
-
-            <div class="input-box">
-              <label for="firstname">Nome</label>
-              <input type="text" id="firstname" name="firstname" placeholder="Digite o seu nome" required>
-            </div>
-          </div>
-
-        </form>
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
 
 
-      </div>
+                    <div class="input-box">
+                        <label for="matricula">Matrícula</label>
+                        <input id="matricula" type="password" name="matricula" placeholder="Digite o nº da matrícula" required>
+                    </div>
+
+                </div>
+
+                <div class="classe-inputs">
+                    <div class="classe-title">
+                        <h6>Classe</h6>
+                    </div>
+
+                    <div class="classe-group">
+                        <div class="classe-input">
+                            <input id="10" type="radio" name="gender">
+                            <label for="10">10ª</label>
+                        </div>
+
+                        <div class="classe-input">
+                            <input id="11" type="radio" name="gender">
+                            <label for="11">11ª</label>
+                        </div>
+
+                        <div class="classe-input">
+                            <input id="12" type="radio" name="gender">
+                            <label for="12">12ª</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="main.html">Continuar</a> </button>
+                </div>
+            </form>
+        </div>
     </div>
-  </body>
+</body>
+
 </html>
