@@ -1,52 +1,47 @@
-#Importação de bibliotecas
 from flask import Flask, render_template, request, redirect
-import psycopg2
-
+import mysql.connector
 
 app = Flask(__name__)
 
-# configuração do banco de dados
-
+# Configurações do banco MySQL
 db_config = {
-    "host":"localhost",
-    "database":"cadastro",
-    "user":"postgres",
-    "password":"horadeferrar"
+    "host": "localhost",
+    "user": "root",
+    "password": "Freddydev@2025",
+    "database": "cadastro"
 }
 
-
-# Rotas do site
-
 @app.route('/')
-def cadastro():
+def index():
     return render_template('form.html')
 
-
 @app.route('/cadastrar', methods=['POST'])
-def cadastro():
-    nome = request.form('nome')
-    email = request.form('email')
-    telefone = request.form('telefone')
-    senha = request.form('senha')
+def cadastrar():
+    nome = request.form['nome']
+    email = request.form['email']
+    telefone = request.form['telefone']
+    senha = request.form['senha']
 
+    conexao = None
+    cursor = None
 
     try:
-        conexao = psycopg2.connect(**db_config)
+        conexao = mysql.connector.connect(**db_config)
         cursor = conexao.cursor()
         cursor.execute(
             "INSERT INTO usuarios (nome, email, telefone, senha) VALUES (%s, %s, %s, %s)",
             (nome, email, telefone, senha)
         )
-
         conexao.commit()
+        return "Cadastro realizado com sucesso!"
+    except mysql.connector.Error as erro:
+        return f"Erro ao cadastrar: {erro}"
+    finally:
+     if cursor:
         cursor.close()
+     if conexao:
         conexao.close()
-        return "Cadastro Realizado com sucesso!"
-    
-    except Exception as e:
-        return f"Erro ao cadastrar: {e}"
 
 
-# abrindo o site
 if __name__ == '__main__':
     app.run(debug=True)
