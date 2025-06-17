@@ -1,47 +1,74 @@
-from flask import Flask, render_template, request, redirect
-import mysql.connector
+from flask import Flask, render_template, request, redirect, jsonify
+from mysql import connector
+
 
 app = Flask(__name__)
 
-# Configurações do banco MySQL
-db_config = {
-    "host": "localhost",
-    "user": "root",
-    "password": "Freddydev@2025",
-    "database": "cadastro"
-}
+
+# Rotas do site
 
 @app.route('/')
-def index():
+def home():
+    return render_template('main.html')
+
+@app.route('/cadastro')
+def cadastrar():
     return render_template('form.html')
 
-@app.route('/cadastrar', methods=['POST'])
-def cadastrar():
-    nome = request.form['nome']
-    email = request.form['email']
-    telefone = request.form['telefone']
-    senha = request.form['senha']
+@app.route('/sobre')
+def sobre():
+    return render_template('sobre.html')
 
-    conexao = None
-    cursor = None
+@app.route('/aulas')
+def aulas():
+    return render_template('aulas.html')
 
-    try:
-        conexao = mysql.connector.connect(**db_config)
-        cursor = conexao.cursor()
-        cursor.execute(
-            "INSERT INTO usuarios (nome, email, telefone, senha) VALUES (%s, %s, %s, %s)",
-            (nome, email, telefone, senha)
+
+
+# cadastro
+
+@app.route('/cadastrar', methods=['GET', 'POST'])
+def cadastro():
+
+    if request.method == 'POST':
+
+        nome = request.form.get('nome')
+        email = request.form.get('email')
+        telefone = request.form.get('telefone')
+        senha = request.form.get('senha')
+
+        dados = (
+            nome, email, telefone, senha
         )
-        conexao.commit()
-        return "Cadastro realizado com sucesso!"
-    except mysql.connector.Error as erro:
-        return f"Erro ao cadastrar: {erro}"
-    finally:
-     if cursor:
+
+        # conectando com mysql
+
+        connect = connector.connect(
+            host="localhost",
+            database="KScadastro",
+            user="root",
+            password="horadeferrar"
+        )
+
+        cursor = connect.cursor()
+
+        query = """
+                INSERT INTO usuarios (nome, email, telefone, senha) VALUES (%s, %s, %s, %s)
+            """
+        # executar o query e armazenar os dados
+
+        cursor.execute(query, dados)
+
+        connect.commit()
+
+        # fechar a conexão com o banco de dados
         cursor.close()
-     if conexao:
-        conexao.close()
+        connect.close()
+
+        return redirect('/')
+
+    return render_template('form.html')
 
 
-if __name__ == '__main__':
+if __name__ == ('__main__'):
     app.run(debug=True)
