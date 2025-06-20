@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <title>Quem Somos - IPOCET</title>
-  <link rel="stylesheet" href="/static/css/imports.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>KS ACADEMY | SOBRE NÓS</title>
+    <!-- importa da biblioteca de icones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
+    <link rel="stylesheet" href="/static/css/imports.css" />
+    <link rel="stylesheet" href="/static/css/sobre/sobre.css" />
+  </head>
+  <body>
     <header>
         <nav id="navbar">
             <img 
@@ -17,7 +26,7 @@
             <ul id="nav_list">
                 <li class="nav-item">
                     <a 
-                    href="#" 
+                    href="main.html" 
                     class="nav-link"
                     >
                     Inicio
@@ -35,7 +44,7 @@
 
                 <li class="nav-item active">
                     <a 
-                    href="#" 
+                    href="sobre.html" 
                     class="nav-link"
                     >
                     Sobre
@@ -44,7 +53,7 @@
 
                 <li class="nav-item">
                     <a 
-                    href="#" 
+                    href="contactos.html" 
                     class="nav-link"
                     >
                     Contactos
@@ -52,15 +61,177 @@
                 </li>
             </ul>
 
-            <a href="#" class="login-link">
+            <a href="inscricao.html" class="login-link">
                 Inscrever-se
             </a>
         </nav>
     </header>
-  
 
- 
+    <section class="page-title">
+      <h1>Sobre Nós</h1>
+      <p>
+        Somos apenas simples estudante que com o conhecimento adquirido pelos
+        intrutores, desenvolvemos esta página para ajudar os estudantes do
+        <strong>IPOCET</strong> em sua jornada curricular.
+      </p>
+    </section>
 
+    <main id="main_container">
+        <section class="card-section">
+          <div class="card-container">
+            <!-- User 1-->
+             <div class="card">
+              <div class="content">
+                <div class="imgBx"><img src="https://avatars.githubusercontent.com/u/193094060?v=4" alt="user1" /></div>
+                <div class="contentBx">
+                  <h3>
+                    Alfredo Francisco
+                    <br />
+                    <span> Front End/Back End </span>
+                  </h3>
+                </div>
+              </div>
+              <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://github.com/DevAlfredoFrancisco" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-</body>
+            <!-- User 1-->
+             <div class="card">
+              <div class="content">
+                <div class="imgBx"><img src="/static/img/user2.jpg" alt="user4" /></div>
+                <div class="contentBx">
+                  <h3>
+                    Nsemo João
+                    <br />
+                    <span> Back End </span>
+                  </h3>
+                </div>
+              </div>
+              <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://github.com/Semipro1" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- User 1-->
+             <div class="card">
+              <div class="content">
+                <div class="imgBx"><img src="/static/img/user4.jpg" alt="user4" /></div>
+                <div class="contentBx">
+                  <h3>
+                    Alexandra Almeida
+                    <br />
+                    <span> Diretora Criativa </span>
+                  </h3>
+                </div>
+              </div>
+              <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://github.com/alexxsakawany" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- User 1-->
+             <div class="card">
+              <div class="content">
+                <div class="imgBx"><img src="https://media.licdn.com/dms/image/v2/D4D03AQHQff1cFC6qtg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724662467546?e=1755734400&v=beta&t=hafbOdOR3fnz4dslEQrUYuaP3XFNyNK_6moYgXeVfPM" alt="user4" /></div>
+                <div class="contentBx">
+                  <h3>
+                    Adilson Vicente
+                    <br />
+                    <span> Instrutor | Eng.Informático </span>
+                  </h3>
+                </div>
+              </div>
+              <ul class="sci">
+                    <li style="--i:1">
+                        <a href="https://www.linkedin.com/in/adilson-natal/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <footer>
+      <img
+        src="https://www.ipocet.com/wp-content/uploads/2021/05/logo_site-1.png"
+        alt="logo"
+        class="footer-logo"
+      />
+
+      <div id="footer_link_content">
+        <ul class="footer-list">
+          <li>
+            <h3 class="list-title">Informações do Ipocet</h3>
+          </li>
+
+          <li>
+            <a href="https://www.ipocet.com/localizacao/" class="footer-link">
+              Localização
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.ipocet.com/" class="footer-link"> Escola </a>
+          </li>
+
+          <li>
+            <a href="https://www.ipocet.com/contactos/" class="footer-link">
+              Contactos
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <h3 class="list-title">Cursos em destaque no Ipocet</h3>
+          </li>
+
+          <li>
+            <a
+              href="https://www.ipocet.com/wp-content/uploads/2021/05/Curso-Te%CC%81cnico-Informa%CC%81tica.pdf"
+              class="footer-link"
+              target="_blank"
+            >
+              Técnico de Informática
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.ipocet.com/wp-content/uploads/2021/05/Curso-Te%CC%81cnico-Electro%CC%81nica-e-Telecomunicac%CC%A7o%CC%83es.pdf"
+              class="footer-link"
+              target="_blank"
+            >
+              Eletrónica e Telecomunicações
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.ipocet.com/wp-content/uploads/2021/05/Curso-Te%CC%81cnico-Gesta%CC%83o-Sistemas-Informa%CC%81ticos.pdf"
+              class="footer-link"
+              target="_blank"
+            >
+              Gestão dos Sistemas Informáticos
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

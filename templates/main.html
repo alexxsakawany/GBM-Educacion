@@ -1,94 +1,183 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="pt">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <meta charset="UTF-8">
-  <title>IPOCET | Aluno</title>
-  <link rel="stylesheet" href="/static/css/main.css">
-<!-- TOPO com logo e infos -->
-<header class="topo">
-      <div class="info-topo">
-      <div class="site-branding">
-      <div class="img-logo"><a href="/static/img/School Logo.png" class="custom-logo-link" rel="home" aria-current="page">
-      <img width="262" height="76" src="https://www.ipocet.com/wp-content/uploads/2021/05/logo_site-1.png" class="custom-logo" alt="">
-      </a>
-      </div><!-- .img-logo -->                
-      <div class="text-logo"> </div>
-      </div>
-      </div> <!-- site-branding ends -->  
-</header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- biblioteca de icones -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Conexão com o CSS -->
+      <link rel="stylesheet" href="/static/css/imports.css">
+      <link rel="stylesheet" href="/static/css/main.css">
+    <title>KS ACADEMY | INICIO</title>
 
-<!-- BARRA DE MENU -->
-<nav class="barra-menu" >
-  <ul>
-    <li><a href="/cadastrar">CADASTRE-SE</a></li>
-    <li><a href="/aulas">AULAS DE REFORÇO</a></li>
-    <li><a href="/sobre">QUEM SOMOS?</a></li>
-    <li><a href="https://www.ipocet.com/contactos/" target="_blank">CONTACTOS</a></li>
-  </ul>
-</nav>
+</head>
 
-<main id="main">
-    <section id="ensino-domiciliar" style="padding: 40px; background-color: #fff; color: #000;">
-    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 40px;">
-    <div class="conteudo"></div>
-    <section class="banner" id="slider">
-    <div class="banner-wrapper"><div id="wp-custom-header" class="wp-custom-header"><img src="https://www.ipocet.com/wp-content/uploads/2021/04/Candidaturas.jpg" width="1920" height="692" alt=""></div>                                                                
-    <div class="banner-text">
-    <div class="container"> 
-    <div class="text">
-        <h2 class="title">O ALUNO EM PRIMEIRO!</h2>                            
-    <div class="btn-holder">
-              <a href="https://www.ipocet.com/ciencias-tecnologias/" class="btn-view-service">CADASTRE-SE</a>      
-           </div>    
-          </div>
-         </div>
-       </div>
-      </div><!-- .banner-wrapper -->
-     </div>
-  </section>
-    <div class="escrita">
-      <h2>Aulas de Reforço!</h2>
-        <h3 style="margin-top: 10px;">Educação de qualidade adaptada às necessidades do seu filho(a)!</h3>
-      
-      <p>Nosso programa de ensino domiciliar é pensado para atender às particularidades de cada aluno, com uma abordagem personalizada e eficiente.</p>
-      <p>Contamos com professores experientes e dedicados, que se deslocam até sua casa para garantir um ambiente de aprendizagem confortável, seguro e produtivo.</p>
-      
-      <strong>Disciplinas incluídas:</strong>
-        <ul>
-         <li>Matemática</li>
-         <li>Língua Portuguesa</li>
-         <li>Inglês</li>
-         <li>Técnicas de Programação e muito mais</li>
-        </ul>
-      <p>Oferecemos horários flexíveis, acompanhamento contínuo e materiais didáticos de alta qualidade — tudo para garantir o sucesso escolar e acadêmico do aluno.</p>
+<body>
+
+    <header>
+        <nav id="navbar">
+            <img 
+            src="https://www.ipocet.com/wp-content/uploads/2021/05/logo_site-1.png" alt="Logo"
+            class="logo"
+            >
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a 
+                    href="main.html" 
+                    class="nav-link"
+                    >
+                    Inicio
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a 
+                    href="inscricao.html" 
+                    class="nav-link"
+                    >
+                    Inscrição
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a 
+                    href="sobre.html" 
+                    class="nav-link"
+                    >
+                    Sobre
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a 
+                    href="contactos.html" 
+                    class="nav-link"
+                    >
+                    Contactos
+                    </a>
+                </li>
+            </ul>
+
+            <a href="inscricao.html" class="login-link">
+                Inscrever-se
+            </a>
+        </nav>
+    </header>
+
+    <section class="page-title">
+        <h2>
+            KS ACADEMY
+        </h2>
+        <h1>
+            Conheça o KS ACADEMY
+        </h1>
+        <p>
+            Um projeto desenvolvido por estudantes do curso de <strong>Gestão dos sitemas informático</strong> do Instituto médio <strong>IPOCET</strong>, com o objetivo de fidelizar os alunos as aulas de reforço.
+        </p>
+    </section>
+
+    <main id="main_container">
+
+        <section id="skills" class="skills">
+            <h2>
+                Disciplinas
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Ciências</h3>
+                    <p>Matématica, Física, Química</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Tecnológia</h3>
+                    <p>Programação, Tecnológias de informação/comunicação, Electrónica</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Línguas</h3>
+                    <p>Língua portuguesa, Língua Inglesa</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Outras</h3>
+                    <p>Empreendedorismo, Formação de atitudes integradoras, Desenho Técnico</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <img 
+            src="https://www.ipocet.com/wp-content/uploads/2021/05/logo_site-1.png"
+            alt="logo"
+            class="footer-logo"
+        >
+
+        <div id="footer_link_content">
+            <ul class="footer-list">
+                <li>
+                    <h3 class="list-title">
+                        Informações do Ipocet
+                    </h3>
+                </li>
+
+                <li>
+                    <a href="https://www.ipocet.com/localizacao/" class="footer-link">
+                        Localização
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.ipocet.com/" class="footer-link">
+                        Escola
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.ipocet.com/contactos/" class="footer-link">
+                        Contactos
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3 class="list-title">
+                        Cursos em destaque no Ipocet
+                    </h3>
+                </li>
+
+                <li>
+                    <a 
+                    href="https://www.ipocet.com/wp-content/uploads/2021/05/Curso-Te%CC%81cnico-Informa%CC%81tica.pdf" class="footer-link"
+                    target="_blank"
+                    >
+                        Técnico de Informática
+                    </a>
+                </li>
+
+                <li>
+                    <a 
+                    href="https://www.ipocet.com/wp-content/uploads/2021/05/Curso-Te%CC%81cnico-Electro%CC%81nica-e-Telecomunicac%CC%A7o%CC%83es.pdf" class="footer-link"
+                    target="_blank"
+                    >
+                        Eletrónica e Telecomunicações
+                    </a>
+                </li>
+
+                <li>
+                    <a 
+                    href="https://www.ipocet.com/wp-content/uploads/2021/05/Curso-Te%CC%81cnico-Gesta%CC%83o-Sistemas-Informa%CC%81ticos.pdf" class="footer-link"
+                    target="_blank"
+                    >
+                        Gestão dos Sistemas Informáticos
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
 
-      </div>
-
-  </div>
-</section>
-
-  <footer class="rodape">
-  <div class="social">
-    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-  </div>
-
-  <div class="links">
-    <a href="/cadastrar">CADASTRE-SE</a> |
-    <a href="#">AULAS DE REFORÇO</a> |
-    <a href="#">QUEM SOMOS?</a> |
-    <a href="https://www.ipocet.com/contactos/" target="_blank">CONTACTOS</a> |
-    <a href="https://www.ipocet.com/localizacao/" class="botao-localizacao" target="_blank">LOCALIZAÇÃO</a>
-  </div>
-
-  <p class="copy">© Copyright 2025 <strong>IPOCET</strong> | Todos os direitos reservados.</p>
-</footer>
-
-</main>
-
- 
+    
 </body>
 </html>

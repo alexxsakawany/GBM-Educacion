@@ -7,8 +7,8 @@
     <!-- biblioteca de icones -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <!-- Conexão com o CSS -->
-      <link rel="stylesheet" href="/static/css/imports.css">
-    <title>KS ACADEMY | INSCRIÇÃO</title>
+      <link rel="stylesheet" href="/static/css/contactos/contactos.css">
+    <title>KS ACADEMY | CONTACTOS</title>
 
 </head>
 
@@ -31,7 +31,7 @@
                     </a>
                 </li>
 
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a 
                     href="inscricao.html" 
                     class="nav-link"
@@ -49,7 +49,7 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a 
                     href="contactos.html" 
                     class="nav-link"
@@ -67,117 +67,116 @@
 
     <section class="page-title">
         <h2>
-            Inscrição
+            
         </h2>
         <h1>
-            Faça a sua inscrição
+            Contactos
         </h1>
         <p>
-            Dê o primeiro passo para a sucesso como estudante nessa jornada rumo a aquisição de conhecimentos, fornecendo os dados necssários para a sua inscrição!
+            Entre em contacto conosco para mais informações e para a eliminação de qualquer dúvida que o estiver a incomodar.
         </p>
     </section>
 
     <main id="main_container">
-
-
-        <section id="registration_form_container">
+        <section id="contacts_container">
             <h3>
-                Inscrever-se
+                Entre em contacto
             </h3>
-            <form method="post" id="registration_form">
-                <div class="input-group">
-                    <label for="name">
-                        Nome Completo
-                    </label>
-                    <input 
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    >
-                </div>
+            <p>
+                Aqui estão as formas de nos contactar.
+            </p>
 
-                <div class="input-group">
-                    <label for="email">
-                        E-mail
-                    </label>
-                    <input 
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    >
-                </div>
+            <div id="cards_container">
+                <a
+                    href="tel:+244944688145"
+                    target="_blank"
+                    class="contact-card phone"
+                 >
+                    <div class="card-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
 
-                <div class="input-group">
-                    <label for="telefone">
-                        Telefone
-                    </label>
-                    <input 
-                    type="tel"
-                    id="telefone"
-                    name="telefone"
-                    required
-                    >
-                </div>
+                    <div class="card-infos">
+                        <p>
+                            Telefone
+                        </p>
+                        <span>
+                            (244) 944-688-145
+                        </span>
+                    </div>
+                </a>
 
-                <div class="input-group">
-                    <label for="matricula">
-                        Nº Matricula (CT)
-                    </label>
-                    <input 
-                    type="text"
-                    id="matricula"
-                    name="matricula"
-                    required
-                    >
-                </div>
+                <a
+                    href="#"
+                    target="_blank"
+                    class="contact-card location"
+                 >
+                    <div class="card-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
 
-                <div class="input-group">
-                    <label for="classe">
-                        Classe
-                    </label>
-                    <input 
-                    type="text"
-                    id="classe"
-                    name="classe"
-                    list="listclasse"
-                    required
-                    >
-                    <!-- Lista de Classes -->
-                    <datalist id="listclasse">
-                        <option value="10ª"></option>
-                        <option value="11ª"></option>
-                        <option value="12ª"></option>
-                    </datalist>
-                </div>
+                    <div class="card-infos">
+                        <p>
+                            Localização
+                        </p>
+                        <span>
+                            Rua Exemplo, 123 - Condomínio Exemplo - Estado
+                        </span>
+                    </div>
+                </a>
 
-                <div class="input-group">
-                    <label for="curso">
-                        Curso
-                    </label>
-                    <input 
-                    type="text"
-                    id="curso"
-                    name="curso"
-                    list="listcurso"
-                    required
-                    >
-                    <!-- Lista de Cursos -->
-                    <datalist id="listcurso">
-                        <option value="GSI"></option>
-                        <option value="TI"></option>
-                        <option value="DP"></option>
-                        <option value="ET"></option>
-                        <option value="FIN"></option>
-                        <option value="CONT.E.GEST"></option>
-                    </datalist>
-                </div>
+                <a
+                    href="mailto:Email@gmail.com"
+                    target="_blank"
+                    class="contact-card email"
+                 >
+                    <div class="card-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
 
-                <button type="submit">
-                    Enviar solicitação
-                </button>
-            </form>
+                    <div class="card-infos">
+                        <p>
+                            E-mail
+                        </p>
+                        <span>
+                            Email@gmail.com
+                        </span>
+                    </div>
+                </a>
+
+                <a
+                    href="https://api.whatsapp.com/send?phone=244944688145"
+                    target="_blank"
+                    class="contact-card whatsapp"
+                 >
+                    <div class="card-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+
+                    <div class="card-infos">
+                        <p>
+                            Whatsapp
+                        </p>
+                        <span>
+                            (244) 944-688-145
+                        </span>
+                    </div>
+                </a>
+            </div>
+
+            <h4>
+                Nos siga nas redes sociais
+            </h4>
+
+            <div id="social_media_icons">
+                <a href="https://www.facebook.com/ipocetluanda/?locale=pt_BR" class="icon-link facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="https://www.instagram.com/ipocetluanda/" class="icon-link instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
         </section>
 
     </main>
