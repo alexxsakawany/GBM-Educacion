@@ -37,3 +37,15 @@ footer {
         }
     }
 }
+
+
+
+@media (max-width: 600px) {
+
+    .footer-logo {
+        width: 100px;
+        height: 50%;
+    }
+
+    
+}
