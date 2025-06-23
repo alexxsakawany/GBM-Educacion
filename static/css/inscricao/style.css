@@ -5,13 +5,12 @@
     font-family: 'Poppins', monospace, sans-serif;
 }
 
-
+/* Cor de Fundo do site */
 body {
     background: radial-gradient(circle, var(--primary-color-1), var(--primary-color-2));
-
-    
 }
 
+/* Main title */
 .page-title {
         display: flex;
         align-items: center;
@@ -118,4 +117,27 @@ body {
             }
         }
     }
+}
+
+
+
+
+/* Responsividade : telas menores */
+
+@media (max-width: 600px) {
+
+        h2 {
+            font-size: 0.5rem;
+
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.5rem;
+        }
+
+
 }
