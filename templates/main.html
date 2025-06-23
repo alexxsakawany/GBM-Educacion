@@ -1,183 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- biblioteca de icones -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!-- Conexão com o CSS -->
-      <link rel="stylesheet" href="/static/css/imports.css">
-      <link rel="stylesheet" href="/static/css/main.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Conexão com o CSS -->
+    <link rel="stylesheet" href="/static/css/imports.css" />
+    <link rel="stylesheet" href="/static/css/main.css" />
+    
     <title>KS ACADEMY | INICIO</title>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header>
-        <nav id="navbar">
-            <img 
-            src="https://www.ipocet.com/wp-content/uploads/2021/05/logo_site-1.png" alt="Logo"
-            class="logo"
-            >
+      <nav id="navbar">
+        <img
+          src="https://www.ipocet.com/wp-content/uploads/2021/05/logo_site-1.png"
+          alt="Logo"
+          class="logo"
+        />
 
-            <ul id="nav_list">
-                <li class="nav-item active">
-                    <a 
-                    href="/" 
-                    class="nav-link"
-                    >
-                    Inicio
-                    </a>
-                </li>
+        <ul id="nav_list">
+          <li class="nav-item active">
+            <a href="/" class="nav-link"> Inicio </a>
+          </li>
 
-                <li class="nav-item">
-                    <a 
-                    href="/inscricao" 
-                    class="nav-link"
-                    >
-                    Inscrição
-                    </a>
-                </li>
+          <li class="nav-item">
+            <a href="/inscricao" class="nav-link"> Inscrição </a>
+          </li>
 
-                <li class="nav-item">
-                    <a 
-                    href="/sobre" 
-                    class="nav-link"
-                    >
-                    Sobre
-                    </a>
-                </li>
+          <li class="nav-item">
+            <a href="/sobre" class="nav-link"> Sobre </a>
+          </li>
 
-                <li class="nav-item">
-                    <a 
-                    href="/contactos" 
-                    class="nav-link"
-                    >
-                    Contactos
-                    </a>
-                </li>
-            </ul>
+          <li class="nav-item">
+            <a href="/contactos" class="nav-link"> Contactos </a>
+          </li>
+        </ul>
 
-            <a href="/inscricao" class="login-link">
-                Inscrever-se
-            </a>
-        </nav>
+        <a href="/inscricao" class="login-link"> Inscrever-se </a>
+
+        <div class="toggle-button open">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+
+      <div class="dropdown-menu">
+        <li class="nav-item active">
+          <a href="/" class="nav-link"> Inicio </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/inscricao" class="nav-link"> Inscrição </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/sobre" class="nav-link"> Sobre </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/contactos" class="nav-link"> Contactos </a>
+        </li>
+
+        <li class="login-link">
+          <a href="/inscricao" class="login-link"> Inscrever-se </a>
+        </li>
+      </div>
     </header>
 
     <section class="page-title">
-        <h2>
-            KS ACADEMY
-        </h2>
-        <h1>
-            Conheça o KS ACADEMY
-        </h1>
-        <p>
-            Um projeto desenvolvido por estudantes do curso de <strong>Gestão dos sitemas informático</strong> do Instituto médio <strong>IPOCET</strong>, com o objetivo de fidelizar os alunos as aulas de reforço.
-        </p>
+      <h2>KS ACADEMY</h2>
+      <h1>Conheça o KS ACADEMY</h1>
+      <p>
+        Um projeto desenvolvido por estudantes do curso de
+        <strong>Gestão dos sitemas informático</strong> do Instituto médio
+        <strong>IPOCET</strong>, com o objetivo de fidelizar os alunos as aulas
+        de reforço.
+      </p>
     </section>
 
     <main id="main_container">
-
-        <section id="skills" class="skills">
-            <h2>
-                Disciplinas
-            </h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Ciências</h3>
-                    <p>Matématica, Física, Química</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Tecnológia</h3>
-                    <p>Programação, Tecnológias de informação/comunicação, Electrónica</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Línguas</h3>
-                    <p>Língua portuguesa, Língua Inglesa</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Outras</h3>
-                    <p>Empreendedorismo, Formação de atitudes integradoras, Desenho Técnico</p>
-                </div>
-            </div>
-        </section>
-        
+      <section id="skills" class="skills">
+        <h2>Disciplinas</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Ciências</h3>
+            <p>Matématica, Física, Química</p>
+          </div>
+          <div class="skill-card">
+            <h3>Tecnológia</h3>
+            <p>
+              Programação, Tecnológias de informação/comunicação, Electrónica
+            </p>
+          </div>
+          <div class="skill-card">
+            <h3>Línguas</h3>
+            <p>Língua portuguesa, Língua Inglesa</p>
+          </div>
+          <div class="skill-card">
+            <h3>Outras</h3>
+            <p>
+              Empreendedorismo, Formação de atitudes integradoras, Desenho
+              Técnico
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <img 
-            src="https://www.ipocet.com/wp-content/uploads/2021/05/logo_site-1.png"
-            alt="logo"
-            class="footer-logo"
-        >
+      <img
+        src="https://www.ipocet.com/wp-content/uploads/2021/05/logo_site-1.png"
+        alt="logo"
+        class="footer-logo"
+      />
 
-        <div id="footer_link_content">
-            <ul class="footer-list">
-                <li>
-                    <h3 class="list-title">
-                        Informações do Ipocet
-                    </h3>
-                </li>
+      <div id="footer_link_content">
+        <ul class="footer-list">
+          <li>
+            <h3 class="list-title">Informações do Ipocet</h3>
+          </li>
 
-                <li>
-                    <a href="https://www.ipocet.com/localizacao/" class="footer-link">
-                        Localização
-                    </a>
-                </li>
+          <li>
+            <a href="https://www.ipocet.com/localizacao/" class="footer-link">
+              Localização
+            </a>
+          </li>
 
-                <li>
-                    <a href="https://www.ipocet.com/" class="footer-link">
-                        Escola
-                    </a>
-                </li>
+          <li>
+            <a href="https://www.ipocet.com/" class="footer-link"> Escola </a>
+          </li>
 
-                <li>
-                    <a href="https://www.ipocet.com/contactos/" class="footer-link">
-                        Contactos
-                    </a>
-                </li>
-            </ul>
+          <li>
+            <a href="https://www.ipocet.com/contactos/" class="footer-link">
+              Contactos
+            </a>
+          </li>
+        </ul>
 
-            <ul class="footer-list">
-                <li>
-                    <h3 class="list-title">
-                        Cursos em destaque no Ipocet
-                    </h3>
-                </li>
+        <ul class="footer-list">
+          <li>
+            <h3 class="list-title">Cursos em destaque no Ipocet</h3>
+          </li>
 
-                <li>
-                    <a 
-                    href="https://www.ipocet.com/wp-content/uploads/2021/05/Curso-Te%CC%81cnico-Informa%CC%81tica.pdf" class="footer-link"
-                    target="_blank"
-                    >
-                        Técnico de Informática
-                    </a>
-                </li>
+          <li>
+            <a
+              href="https://www.ipocet.com/wp-content/uploads/2021/05/Curso-Te%CC%81cnico-Informa%CC%81tica.pdf"
+              class="footer-link"
+              target="_blank"
+            >
+              Técnico de Informática
+            </a>
+          </li>
 
-                <li>
-                    <a 
-                    href="https://www.ipocet.com/wp-content/uploads/2021/05/Curso-Te%CC%81cnico-Electro%CC%81nica-e-Telecomunicac%CC%A7o%CC%83es.pdf" class="footer-link"
-                    target="_blank"
-                    >
-                        Eletrónica e Telecomunicações
-                    </a>
-                </li>
+          <li>
+            <a
+              href="https://www.ipocet.com/wp-content/uploads/2021/05/Curso-Te%CC%81cnico-Electro%CC%81nica-e-Telecomunicac%CC%A7o%CC%83es.pdf"
+              class="footer-link"
+              target="_blank"
+            >
+              Eletrónica e Telecomunicações
+            </a>
+          </li>
 
-                <li>
-                    <a 
-                    href="https://www.ipocet.com/wp-content/uploads/2021/05/Curso-Te%CC%81cnico-Gesta%CC%83o-Sistemas-Informa%CC%81ticos.pdf" class="footer-link"
-                    target="_blank"
-                    >
-                        Gestão dos Sistemas Informáticos
-                    </a>
-                </li>
-            </ul>
-        </div>
+          <li>
+            <a
+              href="https://www.ipocet.com/wp-content/uploads/2021/05/Curso-Te%CC%81cnico-Gesta%CC%83o-Sistemas-Informa%CC%81ticos.pdf"
+              class="footer-link"
+              target="_blank"
+            >
+              Gestão dos Sistemas Informáticos
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
+    <script src="/static/js/header.js">
 
-    
-</body>
+    </script>
+  </body>
 </html>
