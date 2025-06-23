@@ -1,3 +1,4 @@
+#bibliotecas
 from flask import Flask, render_template, request, redirect
 from openpyxl import Workbook, load_workbook
 import os
@@ -15,7 +16,7 @@ if not os.path.exists(EXCEL_FILE):
     ws.append(['Nome', 'Email', 'Telefone', 'Matricula', 'Classe', 'Curso'])
     wb.save(EXCEL_FILE)
 
-
+# Rota incrição
 @app.route('/')
 def form():
     return render_template('inscricao.html')
