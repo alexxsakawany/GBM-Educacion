@@ -126,6 +126,7 @@ body {
 
 @media (max-width: 600px) {
 
+    .page-title {
         h2 {
             font-size: 0.5rem;
 
@@ -138,6 +139,6 @@ body {
         p {
             font-size: 0.5rem;
         }
-
+    }
 
 }
