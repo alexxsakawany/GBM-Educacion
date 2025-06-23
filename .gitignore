@@ -1,0 +1,13 @@
+# Ignorar o Excel com os dados do formulário
+data.xlsx
+
+# Ignorar arquivos temporários
+__pycache__/
+*.pyc
+
+# Ignorar arquivos do VSCode (opcional)
+.vscode/
+
+# Ignorar ambiente virtual (se usares)
+venv/
+env/
