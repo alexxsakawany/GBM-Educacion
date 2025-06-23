@@ -1,4 +1,4 @@
-#bibliotecas
+# bibliotecas
 from flask import Flask, render_template, request, redirect
 from openpyxl import Workbook, load_workbook
 import os
@@ -16,13 +16,25 @@ if not os.path.exists(EXCEL_FILE):
     ws.append(['Nome', 'Email', 'Telefone', 'Matricula', 'Classe', 'Curso'])
     wb.save(EXCEL_FILE)
 
+
 @app.route('/')
 def home():
     return render_template('main.html')
 
+
 @app.route('/inscricao')
 def form():
     return render_template('inscricao.html')
+
+
+@app.route('/sobre')
+def about():
+    return render_template('sobre.html')
+
+
+@app.route('/contactos')
+def contactos():
+    return render_template('contactos.html')
 
 
 @app.route('/send', methods=['POST'])
@@ -41,11 +53,12 @@ def send():
     try:
         wb.save(EXCEL_FILE)
     except PermissionError:
-          return "<h3>Erro: o arquivo está em uso ou protegido. Fecha o Excel e tenta de novo.</h3>"
+        return "<h3>Erro: o arquivo está em uso ou protegido. Fecha o Excel e tenta de novo.</h3>"
 
     wb.save(EXCEL_FILE)
 
     return f"<h3> Dados recebidos com sucesso</h3><a href='/'>Voltar</a>"
+
 
 if __name__ == '__main__':
     app.run(debug=True)
