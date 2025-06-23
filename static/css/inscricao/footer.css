@@ -3,12 +3,25 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 32px 8%;
+     flex-wrap: wrap; /* Adicionado para permitir quebra em telas pequenas */
 
     .footer-logo {
         width: 200px;
         height: 100%;
     }
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 5%;
+    }
 
+    .footer-logo {
+        width: 150px;
+        margin-bottom: 16px;
+    }
+}
     #footer_link_content {
         display: flex;
         gap: 48px;
