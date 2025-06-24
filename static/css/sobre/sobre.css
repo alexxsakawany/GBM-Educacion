@@ -4,14 +4,13 @@
     transition: 0.3s ease;
  }
 
+
 .card-section {
    position: relative;
+   width: 100%;
 }
 
 .card-container {
-   position: relative;
-   z-index: 1;
-   
    display: flex;
    justify-content: center;
    align-items: center;
@@ -20,10 +19,12 @@
 
    .card {
       position: relative;
-      width: 300px;
-      height: 400px;
-      background: rgba(31, 68, 179, 0.53);
-      margin: 20px;
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      background: rgba(35, 59, 167, 0.53);
+      margin: 25px;
+      padding: 60px;
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
       border: 15px;
       border-radius: 10px;
@@ -42,7 +43,6 @@
          justify-content: center;
          align-items: center;
          flex-direction: column;
-         opacity: 0.5; /* se o site estive fusco apague*/
          transition: 0.5s;
       }
 
