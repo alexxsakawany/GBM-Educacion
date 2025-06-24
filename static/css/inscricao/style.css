@@ -138,5 +138,22 @@ body {
     }
   }
 
- 
+}
+
+@media (max-width: 334px) {
+  .page-title {
+    h2 {
+      font-size: 0.4rem;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      line-height: 1.4rem;
+    }
+
+    p {
+      font-size: 0.4rem;
+    }
+  }
+
 }
