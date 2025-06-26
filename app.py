@@ -58,6 +58,9 @@ def send():
     wb.save(EXCEL_FILE)
 
     
+    print()
+    print(f'Os dados do {nome} foram enviados no sistema com sucesso!')
+    print()
     return render_template('inscricao.html', mostrar_popup=True, nome=nome)
 
 
