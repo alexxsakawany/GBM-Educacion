@@ -14,7 +14,7 @@ EMAIL_USUARIO = os.getenv('EMAIL_USUARIO')
 EMAIL_SENHA = os.getenv('EMAIL_SENHA')
 
 
-# Estruturação do email 
+# Estruturação do email
 
 def enviar_email(nome, email, telefone, matricula, classe, curso, disciplina):
     corpo = f"""
@@ -37,17 +37,20 @@ def enviar_email(nome, email, telefone, matricula, classe, curso, disciplina):
     msg = MIMEText(corpo)
     msg['Subject'] = 'Inscrição no KS ACADEMY!'
     msg['From'] = EMAIL_USUARIO
-    msg['To'] = EMAIL_USUARIO # aqui selecionamos em quem o email será enviado, no caso nós próprios
+    # aqui selecionamos em quem o email será enviado, no caso nós próprios
+    msg['To'] = EMAIL_USUARIO
 
-    try: 
+    try:
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
             smtp.login(EMAIL_USUARIO, EMAIL_SENHA)
             smtp.send_message(msg)
             print("Email enviado com sucesso.")
     except Exception as e:
-            print("Erro ao enviar email:", e)
+        print("Erro ao enviar email:", e)
 
 # Criação do banco
+
+
 def criar_banco():
     if not os.path.exists("banco.db"):
         conn = sqlite3.connect('banco.db')
@@ -89,6 +92,7 @@ def contactos():
 
 # Rotas exercendo Funções :)
 
+
 @app.route('/send', methods=['POST'])
 def send():
     nome = request.form['nome']
@@ -99,35 +103,31 @@ def send():
     curso = request.form['curso']
     disciplina = request.form['disciplina']
 
-
     # Enviado dados para um banco de dados SQL
 
     conn = sqlite3.connect('banco.db')
     cursor = conn.cursor()
     try:
-         cursor.execute("INSERT INTO usuarios (nome, email, telefone, matricula, classe, curso, disciplina) VALUES (?, ?, ?, ?, ?, ?, ?)", (nome, email, telefone, matricula,  classe, curso, disciplina))
-         conn.commit()
-         conn.close()
+        cursor.execute("INSERT INTO usuarios (nome, email, telefone, matricula, classe, curso, disciplina) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                       (nome, email, telefone, matricula,  classe, curso, disciplina))
+        conn.commit()
+        conn.close()
 
-         print()
-         print(f"Dados do {nome} salvos no banco.")
-         print()
-         confirm_data = True
+        print()
+        print(f"Dados do {nome} salvos no banco.")
+        print()
+        confirm_data = True
     except Exception as e:
-         print()
-         print("Erro ao salvar dados no banco.", e)
-         print()
-         confirm_data = False
+        print()
+        print("Erro ao salvar dados no banco.", e)
+        print()
+        confirm_data = False
 
     if confirm_data == True:
-        enviar_email(nome, email, telefone, matricula, classe, curso, disciplina)
-
-        
+        enviar_email(nome, email, telefone, matricula,
+                     classe, curso, disciplina)
 
     return render_template('inscricao.html', mostrar_popup=True, nome=nome)
-
-    
-
 
 
 if __name__ == '__main__':
