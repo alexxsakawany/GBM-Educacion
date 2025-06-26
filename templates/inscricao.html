@@ -180,6 +180,18 @@
                     </datalist>
                 </div>
 
+                <div class="input-group">
+                    <label for="disciplina">
+                        Disciplina
+                    </label>
+                    <input 
+                    type="disciplina"
+                    id="disciplina"
+                    name="disciplina"
+                    required
+                    >
+                </div>
+
                 <button type="submit">
                     Enviar solicitação
                 </button>
@@ -267,13 +279,14 @@
     <script>
         Swal.fire({
             title: 'Sucesso!',
-            text: 'Olá {{ nome }}, seus dados foram enviados.',
+            text: 'Olá {{ nome }}, sua inscrição foi recebida!',
             icon: 'success',
             confirmButtonText: 'OK'
+        }).then(() => {
+            window.location.href = '/inscricao'; 
         });
     </script>
     {% endif %}
-
     
 </body>
 </html>
