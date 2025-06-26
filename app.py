@@ -24,7 +24,7 @@ def home():
 
 @app.route('/inscricao')
 def form():
-    return render_template('inscricao.html')
+    return render_template('inscricao.html', mostrar_popup=False)
 
 
 @app.route('/sobre')
@@ -57,7 +57,8 @@ def send():
 
     wb.save(EXCEL_FILE)
 
-    return f"<h3> Dados recebidos com sucesso</h3><a href='/'>Voltar</a>"
+    
+    return render_template('inscricao.html', mostrar_popup=True, nome=nome)
 
 
 if __name__ == '__main__':

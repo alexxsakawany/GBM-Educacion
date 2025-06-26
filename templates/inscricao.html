@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- biblioteca de icones -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Biblioteca de alertas -->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
      <!-- Conexão com o CSS -->
       <link rel="stylesheet" href="/static/css/imports.css">
     <title>KS ACADEMY | INSCRIÇÃO</title>
@@ -181,6 +183,8 @@
                 <button type="submit">
                     Enviar solicitação
                 </button>
+
+                
             </form>
         </section>
 
@@ -258,6 +262,17 @@
     </footer>
 
     <script src="/static/js/header.js"></script>
+
+    {% if mostrar_popup %}
+    <script>
+        Swal.fire({
+            title: 'Sucesso!',
+            text: 'Olá {{ nome }}, seus dados foram enviados.',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
+    </script>
+    {% endif %}
 
     
 </body>
