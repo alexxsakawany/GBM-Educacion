@@ -3,7 +3,6 @@
 
 /* Paginda de inscrição*/
 @import url(/static/css/inscricao/header.css);
-@import url(/static/css/inscricao/style.css);
 @import url(/static/css/inscricao/footer.css);
 
 /* Fontes CSS */
@@ -210,4 +209,43 @@ body {
     }
 
     
+}
+
+
+/* Responsividade : telas menores */
+
+@media (max-width: 572px) {
+  .page-title {
+    h2 {
+      font-size: 0.8rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+}
+
+@media (max-width: 334px) {
+  .page-title {
+    h2 {
+      font-size: 0.4rem;
+    }
+
+    h1 {
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+    }
+
+    p {
+      font-size: 0.4rem;
+    }
+  }
+
 }
