@@ -102,6 +102,8 @@ def send():
     classe = request.form['classe']
     curso = request.form['curso']
     disciplina = request.form['disciplina']
+    
+    criar_banco()
 
     # Enviado dados para um banco de dados SQL
 
@@ -131,5 +133,4 @@ def send():
 
 
 if __name__ == '__main__':
-    criar_banco()
     app.run(debug=True)
